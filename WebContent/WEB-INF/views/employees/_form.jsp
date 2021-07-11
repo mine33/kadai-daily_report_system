@@ -29,14 +29,3 @@
 
 <input type="hidden" name="_token" value="${_token}" />
 <button type="submit">投稿</button>
-
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Insert title here</title>
-    </head>
-    <body>
-
-    </body>
-</html>
