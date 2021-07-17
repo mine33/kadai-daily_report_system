@@ -14,7 +14,7 @@
 				<tr>
 					<th class="report_name">氏名</th>
 					<th class="report_date">日付</th>
-					<th class="report_tktle">タイトル</th>
+					<th class="report_title">タイトル</th>
 					<th class="report_action">操作</th>
 				</tr>
 				<c:forEach var="report" items="${reports}" varStatus="status">
@@ -30,10 +30,10 @@
 
 		<div id="pagination">
 			（全 ${reports_count} 件)<br />
-			<c:forEach var="i" begin="1" end="${((reports_count -1) / 15) + 1}" step="1">
+			<c:forEach var="i" begin="1" end="${((reports_count - 1) / 15) + 1}" step="1">
 				<c:choose>
 					<c:when test="${i == page}">
-						<c:out value="{i}" />&nbsp;
+						<c:out value="${i}" />&nbsp;
 					</c:when>
 					<c:otherwise>
 						<a href="<c:url value='/reports/index?page=${i}' />"><c:out value="${i}" /></a>&nbsp;
